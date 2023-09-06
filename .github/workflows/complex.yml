@@ -1,0 +1,15 @@
+name: "Complex work flow"
+on: push
+jobs:
+  ubuntu:
+    name: "print the date"
+    runs-on: ubuntu-latest
+    steps:
+    -  run: date
+
+  windows:
+    name: "print the date"
+    runs-on: windows-latest
+    steps:
+    - run: date
+  
